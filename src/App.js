@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {ModuleA} from "module-a";
+import {ModuleB} from "module-b";
 import './App.css';
 
 export default class App extends Component {
@@ -12,27 +14,10 @@ export default class App extends Component {
               <Link to="/module1" className="App-route">Module 1</Link>
               <Link to="/module2" className="App-route">Module 2</Link>
           </header>
-          <Route exact path="/module1" component={Home} />
-          <Route path="/module2" component={About} />
+          <Route exact path="/module1" component={ModuleA} />
+          <Route path="/module2" component={ModuleB} />
         </Router>
       </div>
     );
   }
-}
-
-
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-}
-
-function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
 }

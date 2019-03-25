@@ -2,8 +2,15 @@
   "name": "exc-app",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "parcel-bundler": "^1.12.3"
+  },
   "dependencies": {
-    "parcel-bundler": "^1.12.3",
+    "module-a": "https://github.com/sakshigupta/module-a.git",
+    "module-b": "https://github.com/sakshigupta/module-b.git",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0"
