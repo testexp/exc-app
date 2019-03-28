@@ -21,5 +21,5 @@ build:
 	webpack --mode production
 
 build-ci:
-        #parcel build public/index.html
-        webpack --mode production $(publicPath)
+	#parcel build public/index.html
+	webpack --mode production $(publicPath)
