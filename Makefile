@@ -19,3 +19,7 @@ run:
 build: 
 	#parcel build public/index.html
 	webpack --mode production
+
+build-ci: 
+	#parcel build public/index.html
+	webpack --mode production --output-public-path exc-app-$(Build.SourceVersion)
