@@ -2,7 +2,7 @@
 
 SHELL := /bin/bash
 PATH := ./node_modules/.bin:$(PATH)
-BUILD_HASH = $(Build.SourceVersion) 
+
 clean:
 	rm -rf node_modules dist .cache
 	rm -f yarn.lock
@@ -20,6 +20,6 @@ build:
 	#parcel build public/index.html
 	webpack --mode production
 
-build-ci: 
-	#parcel build public/index.html
-	webpack --mode production --output-public-path exc-app-${BUILD_HASH}
+build-ci:
+        #parcel build public/index.html
+        webpack --mode production $(publicPath)
