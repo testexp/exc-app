@@ -11,11 +11,11 @@ export default class App extends Component {
         <Router>
           <header className="App-header">
               <p className="App-name">Adobe Excperience Cloud</p>
-              <Link to="/module1" className="App-route">Module 1</Link>
-              <Link to="/module2" className="App-route">Module 2</Link>
+              <Link to="%PUBLIC_URL%/module1" className="App-route">Module 1</Link>
+              <Link to="%PUBLIC_URL%/module1" className="App-route">Module 2</Link>
           </header>
-          <Route exact path="/module1" component={ModuleA} />
-          <Route path="/module2" component={ModuleB} />
+          <Route path="%PUBLIC_URL%/module1" component={ModuleA} />
+          <Route path="%PUBLIC_URL%/module2" component={ModuleB} />
         </Router>
       </div>
     );
