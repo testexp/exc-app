@@ -15,7 +15,6 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "@react/react-spectrum": "^2.12.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-router-dom": "^5.0.0"
